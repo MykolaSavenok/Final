@@ -9,10 +9,6 @@ import Basket from './components/basket/Basket.jsx';
 import Main from './components/main/Main.jsx';
 import SmoothieConstructor from './components/constructor/SmoothieConstructor.jsx';
 
-
-const rootEl = document.getElementById('root');
-const root = ReactDOM.createRoot(rootEl);
-
 const router = createBrowserRouter(
    [
       {
@@ -37,8 +33,11 @@ const router = createBrowserRouter(
             }
          ]
       },
-   ]);
+   ]
+);
 
+const rootEl = document.getElementById('root');
+const root = ReactDOM.createRoot(rootEl);
 
 root.render(
    <React.StrictMode>

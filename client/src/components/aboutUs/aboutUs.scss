@@ -48,6 +48,11 @@
          flex-direction: column;
          a {
             color: inherit;
+            transition: all 0.3s;
+            &:hover {
+               color: #b57575;
+               text-decoration: underline;
+            }
             &:not(:last-child) {
                margin-bottom: 5px;
             }
