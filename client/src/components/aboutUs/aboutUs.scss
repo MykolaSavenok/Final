@@ -1,0 +1,57 @@
+.about-us {
+   &__container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 40px 15px;
+   }
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+   }
+   &__image {
+      overflow: hidden;
+      img {
+         max-width: 100%;
+         height: 100%;
+         object-fit: cover;
+         transition: all 0.3s;
+         &:hover{
+            transform: scale(1.03);
+         }
+      }
+   }
+   &__text {
+      font-size: 18px;
+      letter-spacing: 1.1px;
+      line-height: 1.2;
+   }
+   .contacts__header {
+      font-size: 24px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #000;
+      max-width: 50%;
+   }
+   .contacts__text {
+      margin-bottom: 20px;
+      font-size: 18px;
+   }
+
+   .contacts__number{
+      font-weight: bold;
+      p {
+         margin-bottom: 10px;
+         letter-spacing: 1.2px;
+      }
+      div {
+         display: inline-flex;
+         flex-direction: column;
+         a {
+            color: inherit;
+            &:not(:last-child) {
+               margin-bottom: 5px;
+            }
+         }
+      }
+   }
+}
